@@ -1,7 +1,7 @@
 ---
-layout: default
+layout: know
 title: Understand video performance
-permalink: /understand-video-performance/
+permalink: /know/how-to-understand-video-performance
 ---
 
 ## Understand video performance

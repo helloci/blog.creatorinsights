@@ -1,3 +1,5 @@
+
+
 .site-header {
     position: relative;
     padding: 24px 0;
@@ -5,9 +7,35 @@
 
 .site-header-inner {
     position: relative; /* To display all elements above the background color */
-    display: flex;
     justify-content: space-between;
     align-items: center;
+
+    nav {
+        margin: 20px 10px;
+        
+        .button {
+            background: color(additional, 4);
+            color: color(primary, 3)
+        }
+    }
+}
+
+.home .site-header-inner {
+    
+    .nav-link {
+        color: color(typography, 2);
+        text-decoration: none;
+
+        &:hover, &.selected  {
+            padding-bottom: 6px;
+            border-bottom: 4px solid color(additional, 1);
+        }
+    }
+
+    .know-link {
+        color: color(primary, 3);
+        font-weight: 600;
+    }
 }
 
 .header-brand {
@@ -55,6 +83,12 @@
 
 @include media( '>large' ) {
 
+    .site-header-inner {
+
+        display: flex;
+    
+    }
+
     .site-header-large-bg {
         position: relative;
 
@@ -64,7 +98,7 @@
             bottom: 0;
             left: 540px; /* .hero-copy width + offset origin 648*/
             width: 9999px;
-            height: 100vh;
+            height: 75vh;
             background: mix(color(primary, 3), color(primary, 1));
             background: linear-gradient(to bottom, color(primary, 3) 0, color(primary, 1) 100%);
             background-repeat: no-repeat;
@@ -72,7 +106,7 @@
             svg {
                 display: block;
                 position: absolute;
-                top: 100vh;
+                top: 75vh;
                 width: 999px;
             }
         }

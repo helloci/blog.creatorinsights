@@ -1,0 +1,46 @@
+<section class="hero hero-know">
+    <div class="container">
+        <div class="hero-inner">
+            <div class="hero-copy">
+                <div class="container-sm">
+                    <h1 class="hero-title h2-mobile mt-0 is-revealing">Your best YouTube knowledge base</h1>
+                    <p class="hero-paragraph is-revealing">Everything you need to learn to thrive as a content creator. Short on time? Sign up below for a free one-page PDF guide.</p>
+                    <div class="hero-form newsletter-form field field-grouped is-revealing">
+                        <div class="control control-expanded">
+                            <input class="input" type="email" name="email" placeholder="Your best email&hellip;">
+                        </div>
+                        <div class="control">
+                            <a class="button button-primary button-block button-shadow" href="#">Let's go</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-illustration">
+                <div class="hero-illustration-browser is-revealing">
+                    <h4 class="heading">Start by selecting a topic you're interested in</h4>
+                    <a id="begin-btn" class="hero-button button button-block button-shadow button-chapter" href="{{ '/know/how-to-start-a-youtube-channel#content' | relative_url }}"> <span class="emoji">🛫</span> Start your channel</a>
+                    <a id="producing-btn"class="hero-button button button-block button-shadow button-chapter" href="{{ '/know/how-to-produce-quality-content#content' | relative_url }}"><span class="emoji">🔥</span> Produce quality content</a>
+                    <a id="analysis-btn" class="hero-button button button-block button-shadow button-chapter" href="{{ '/know/how-to-understand-video-performance#content' | relative_url }}"><span class="emoji">📈</span> Understand video performance</a>
+                    <a id="growth-btn" class="hero-button button button-block button-shadow button-chapter" href="{{ '/know/how-to-sustain-channel-growth#content' | relative_url }}"><span class="emoji">🚀</span> Sustain channel growth</a>
+                    <a class="hero-button button button-block button-shadow button-extra" href="{{ '/know/tips-from-youtubers#content' | relative_url }}"><span class="emoji">💁</span> Tips from YouTubers</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="content">
+    <a name="content"></a>
+    <div class="container">
+        {{ page.content }}
+        
+        <nav class="content-navigation button-block">
+            {% capture url-prev %}{{ page.previous.url }}#content{% endcapture %}
+            {% capture url-next %}{{ page.next.url }}#content{% endcapture %}
+            
+            <a class="button button-primary button-shadow {% unless page.previous.url %} button-disable {% endunless %}" {% if page.previous.url %} href="{{ url-prev | relative_url}}" {% endif %}>&LongLeftArrow; Back</a>
+            <a class="button button-primary button-shadow {% unless page.next.url %} button-disable {% endunless %}" {% if page.next.url %} href="{{ url-next | relative_url }}" {% endif %}>Continue &LongRightArrow;</a>
+        </nav>
+
+        <p><b>Sharing with your community helps promote this site</b></p>
+    </div>
+</section>

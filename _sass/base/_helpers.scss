@@ -464,10 +464,13 @@
 /* Reveal animations */
 .sr {
 
-	.has-animations {
+	.base-page {
 
-		.is-revealing {
-			visibility: hidden;
+		.has-animations {
+
+			.is-revealing {
+				visibility: hidden;
+			}
 		}
 	}
 }

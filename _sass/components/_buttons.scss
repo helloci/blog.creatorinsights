@@ -118,6 +118,31 @@
     }
 }
 
+
+.button-disable {
+    background: color(additional, 5);
+    cursor: inherit;
+    box-shadow: 0 4px 16px rgba(color(additional, 5), .5);
+
+    &:hover {
+        background: color(additional, 5);
+    }
+
+    &.button-shadow {
+
+        &::before {
+            box-shadow: none;
+        }
+
+        &:hover {
+
+            &::before {
+                box-shadow: none;
+            }
+        }
+    }
+}
+
 .button-block {
     display: flex;
 }

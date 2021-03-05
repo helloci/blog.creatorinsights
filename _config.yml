@@ -23,7 +23,8 @@ title-suffix: YouTube
 email: hellocreatorinsights@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   The ultimate resource to learning how to thrive in your YouTube journey.
-baseurl: "/blog.creatorinsights/" # the subpath of your site, e.g. /blog
+baseurl: "/blog.creatorinsights" # the subpath of your site, e.g. /blog
+contenturl: '#content'
 url: "https://helloci.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 
 github_username:  

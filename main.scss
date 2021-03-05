@@ -2,20 +2,72 @@
 # Front matter comment to ensure Jekyll properly reads file.
 ---
 
-@import "abstracts/functions";
-@import "abstracts/include-media";
-@import "abstracts/mixins";
-@import "abstracts/variables";
+/*--------------------------------------------------------------
+# Variables, functions and mixins
+--------------------------------------------------------------*/
+@import "abstracts/variables",
+        "abstracts/functions",
+        "abstracts/mixins",
+        'abstracts/include-media';
 
+/*--------------------------------------------------------------
+1.0 Normalize
+	* normalize.css v7.0.0 | MIT License
+	* github.com/necolas/normalize.css
+--------------------------------------------------------------*/
+@import "normalize";
+
+/*--------------------------------------------------------------
+# Base
+--------------------------------------------------------------*/
 @import "base/base";
-@import "base/helpers";
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
 @import "base/typography";
 
-@import "components/buttons";
+/*--------------------------------------------------------------
+# Helpers
+--------------------------------------------------------------*/
+@import "base/helpers";
+
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
 @import "components/forms";
 
-@import "layout/footer";
-@import "layout/header";
-@import "layout/hero";
-@import "layout/main";
+/*--------------------------------------------------------------
+# Buttons
+--------------------------------------------------------------*/
+@import "components/buttons";
 
+/*--------------------------------------------------------------
+# Cards
+--------------------------------------------------------------*/
+@import "components/cards";
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+@import "layout/header";
+
+/*--------------------------------------------------------------
+# Hero
+--------------------------------------------------------------*/
+@import "layout/hero";
+
+/*--------------------------------------------------------------
+# Site content
+--------------------------------------------------------------*/
+@import "layout/main";
+@import "layout/content-navigation";
+@import "layout/newsletter";
+@import "layout/features";
+@import "layout/posts";
+@import "layout/pricing";
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+@import "layout/footer";

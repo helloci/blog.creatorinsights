@@ -1,0 +1,60 @@
+.pricing-header {
+  margin-bottom: 70px;
+}
+
+
+.pricing-title {
+  span {
+    color: color(primary, 3);
+  }
+}
+
+.pricing {
+	padding-bottom: 2.25rem;
+	text-align: center;
+
+  .card {
+    max-width: 320px;
+
+    .best-value {
+      position: absolute;
+    }
+  }
+
+  .frequency {
+    font-size: 0.875rem;
+  }
+
+  .price {
+    .currency {
+      margin-right: 0.25rem;
+      color: color(typography, 1a);
+      font-weight: 700;
+      font-size: 1.5rem;
+      vertical-align: 40%;
+    }
+
+    .value {
+      color: color(typography, 1a);
+      font: 700 3.25rem/3.5rem "Open Sans", sans-serif;
+      text-align: center;
+    }
+  }
+
+  .card-title {
+    color: color(primary, 3);
+  }
+
+  .fas {
+    color: #5f4dee;
+    font-size: 0.875rem;
+    line-height: 1.625rem;
+  }
+
+  .fas.fa-times {
+    margin-left: 0.1875rem;
+    margin-right: 0.125rem;
+    color: #555;
+  }
+  
+}

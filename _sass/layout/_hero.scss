@@ -1,7 +1,9 @@
 .hero {
     text-align: center;
+}
+
+.know .hero {
     flex: 1 0 auto;
-    margin-bottom: 130px;
 }
 
 .hero-inner {
@@ -46,7 +48,22 @@
 
 .button-extra {
     background: color(additional, 4);
-    color: color(primary, 3)
+    color: color(primary, 2)
+}
+
+.hero-browser {
+    position: relative;
+    margin-top: 80px;
+}
+
+.hero-browser-inner {
+    position: relative; /* To display bubbles below the browser */
+
+    svg {
+        width: 100%;
+        height: auto;
+        overflow: visible;
+    }
 }
 
 .hero-illustration {
@@ -89,6 +106,15 @@
 
 @include media( '>medium' ) {
 
+    .home .hero {
+        padding-top: 80px;
+        padding-bottom: 10px;
+    }
+
+    .home .hero-paragraph {
+        margin-bottom: 40px;
+    }
+
     .hero-paragraph {
         padding-left: 72px;
         padding-right: 72px;
@@ -104,6 +130,7 @@
     .hero-button {
         margin-bottom: 25px;
     }
+
 }
 
 @include media( '>large' ) {
@@ -120,8 +147,13 @@
         }
     }
 
-    .hero-inner {
-        display: flex;
+    .know .hero {
+        margin-bottom: -50px;
+        
+        .hero-inner  {
+            display: flex;
+        }
+        
     }
 
     .hero-copy {
@@ -140,7 +172,7 @@
     }
 
     .hero-illustration {
-        top: -120px;
+        top: -80px;
 
         &::before {
             content: normal;
